@@ -1,0 +1,30 @@
+==================  Abstract Syntax Tree ================
+Node name : Root/Program. Program name is: P
+Node name : Begin
+Node name : DeclarationList
+Node name : DeclarationList
+Node name : DeclarationList
+Node name : VariableDeclaration. Var name is: a
+Node name : SimpleType
+Type is : Integer
+Node name : VariableDeclaration. Var name is: b
+Node name : AddressType
+Node name : IdeType
+Node name : VariableDeclaration. Var name is: c
+Node name : AddressType
+Node name : IdeType
+Node name : StatementList
+Node name : AssignNode name : IdeType
+Node name : IntConst. Value is :3
+Node name : StatementList
+Node name : AssignNode name : AddressRef
+Node name : IdeType
+Node name : IntConst. Value is :5
+Node name : StatementList
+Node name : AssignNode name : AddressRef
+Node name : AddressRef
+Node name : IdeType
+Node name : IntConst. Value is :10
+Node name : StatementList
+Node name : ProcedureStatement. Proc name : 0x1060580
+Node name : ExprListNode name : IdeType

@@ -1,0 +1,23 @@
+PROGRAM aa
+
+	x FIXED;
+	y FIXED;
+	
+{
+	x = 5;
+	y = 3;
+	IF(x)THEN
+		WRITE(100);
+		IF(y)THEN
+			WRITE(200);
+		ELSE
+			WRITE(300);
+		FI
+		IF(x == y)THEN
+			WRIYE(400);
+		ELSE
+			WRITE(500);
+		FI
+	FI
+
+}

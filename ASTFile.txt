@@ -1,0 +1,56 @@
+==================  Abstract Syntax Tree ================
+Node name : Root/Program. Program name is: H
+Node name : Begin
+Node name : DeclarationList
+Node name : DeclarationList
+Node name : DeclarationList
+Node name : DeclarationList
+Node name : VariableDeclaration. Var name is: x
+Node name : SimpleType
+Type is : Integer
+Node name : VariableDeclaration. Var name is: y
+Node name : SimpleType
+Type is : Integer
+Node name : VariableDeclaration. Var name is: rec
+Node name : RecordType
+Node name : RecordList
+Node name : VariableDeclaration. Var name is: a
+Node name : SimpleType
+Type is : Integer
+Node name : RecordList
+Node name : VariableDeclaration. Var name is: b
+Node name : AddressType
+Node name : IdeType
+Node name : RecordList
+Node name : VariableDeclaration. Var name is: arr
+Node name : ArrayType: low bound is: 1, up bound is: 2
+Node name : ArrayType: low bound is: 1, up bound is: 3
+Node name : ArrayType: low bound is: 1, up bound is: 4
+Node name : SimpleType
+Type is : Integer
+Node name : VariableDeclaration. Var name is: point
+Node name : AddressType
+Node name : IdeType
+Node name : StatementList
+Node name : NewStatementNode name : IdeType
+Node name : StatementList
+Node name : NewStatementNode name : RecordRef
+Node name : AddressRef
+Node name : IdeType
+Node name : IdeType
+Node name : StatementList
+Node name : AssignNode name : RecordRef
+Node name : AddressRef
+Node name : IdeType
+Node name : RecordRef
+Node name : AddressRef
+Node name : IdeType
+Node name : ArrayRef
+Node name : IdeType
+Node name : Dim
+Node name : IntConst. Value is :1
+Node name : Dim
+Node name : IntConst. Value is :2
+Node name : Dim
+Node name : IntConst. Value is :3
+Node name : IntConst. Value is :1

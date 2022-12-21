@@ -1,0 +1,9 @@
+PROGRAM P
+	a FIXED;
+	b ^a;
+	c ^b;
+{
+	a = b;
+	a = b^;
+
+}

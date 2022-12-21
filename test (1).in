@@ -1,0 +1,108 @@
+PROGRAM a
+	a FIXED;
+	b FIXED;
+	c FIXED;
+	d FIXED;
+	e FIXED;
+	wow FIXED;
+	lastTest FIXED;
+{
+	a = 24.22;
+	b = 11.0;
+	c = a + (b / 1 + 8 * 4.0 - (4 - a + 1 + ( b - ( 3 - 14 - (b + 3.021)))));
+	d = (c == b);
+	e = 2;
+	wow = e * e + (-e);
+	lastTest = TRUE & (1 | 1);
+
+	a = 5.55555;
+	b = 150 + a * 88;
+	c= b;
+	IF (a == 5) THEN
+		a = b + 99;
+		IF (c == b) THEN
+			b = 2222;
+		ELSE
+			c = 888888;
+		FI
+	ELSE
+		a = 0;
+	FI
+
+	WHILE ((a / (b - 2.923)) >= 1 - 1 ) {
+		WHILE (lastTest & (e == 0) & (wow == a) ) {
+			WHILE (a - a == e - 2.0) {
+				a = 2;
+				CASE a OF {
+					1:
+						CASE (b) OF {
+							1: c = 5;
+							2: c = 6;
+						}
+					2:
+						c = 4;
+						IF (FALSE) THEN
+							WRITE (2);
+						ELSE
+							IF (a < b) THEN
+								a = a + b;
+							ELSE
+								CASE (b) OF {
+									1: c = 5;
+									2:
+										c = 0;
+										WHILE (c < 6) {
+											c = c + 1;
+										}
+									3: WRITE (d);
+								}
+								WRITE (a);
+							FI
+						FI
+					3: c = 5;
+					4: c = 5;
+				}
+			}
+		}
+		CASE a OF
+		{
+			1:CASE b OF
+			{
+				1:c=5;
+				2:CASE c OF
+				{
+					1:a=15;
+					2:a=16;
+				}
+			}
+			2:c=4;
+			3:c=5;
+			4:c=5;
+		}
+		CASE c OF
+		{
+			1:a=15;
+			2:a=16;
+		}
+	}
+
+	IF (TRUE) THEN
+		WRITE (FALSE);
+	FI
+	IF ((99 < 94) & (99 > 94) & (99 >= 94) & (99 <= 94)) THEN
+		a = a + b;
+	ELSE
+		IF (0 | FALSE | ((1 == 0) & (e / 2 == 0))) THEN
+			a = a + b;
+		FI
+		WRITE (a);
+		WRITE (b);
+		WRITE (c);
+		WRITE (d);
+		WRITE (e);
+	FI
+
+	WRITE (wow);
+	WRITE (lastTest);
+	WRITE (d & a < wow);
+}

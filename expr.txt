@@ -1,0 +1,75 @@
+void pcodegen(ostream& os) {
+        assert(op_);
+        if (unary_) {
+            assert(atom_);
+            if (op_ == 287) { //CASE NOT/neg = 300,
+                atom_->pcodegen(os);
+                os << "neg\n";
+            }
+        }
+        else {
+            assert(left_ && right_);
+            if (op_ == 286) { //286 == ADD
+                addFlag = 1;
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                if(!constFlag)
+                    os << "add\n";
+                constFlag = 0;
+            }
+            if (op_ == 287) { //287 == MIN (acts like SUB)
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "sub\n";
+            }
+            if (op_ == 288) { //288 == MUL
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "mul\n";
+            }
+            if (op_ == 292) { //292 == LES
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "les\n";
+            }
+            if (op_ == 293) { //293 == LEQ
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "leq\n";
+            }
+            if (op_ == 294) { //294 == EQU
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "equ\n";
+            }
+            if (op_ == 295) { //295 == NEQ
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "neq\n";
+            }
+            if (op_ == 296) { //296 == GRE
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "grt\n";
+            }
+            if (op_ == 297) { //297 == GEQ
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "geq\n";
+            }
+            if (op_ == 298) { //298 == AND
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "and\n";
+            }
+            if (op_ == 299) { //299 == OR
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "or\n";
+            }
+            if (op_ == 300) { //300 == NOT
+                right_->pcodegen(os);
+                left_->pcodegen(os);
+                os << "not\n";
+            }
+        }

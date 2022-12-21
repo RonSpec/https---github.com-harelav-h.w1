@@ -1,0 +1,126 @@
+PROGRAM MAA
+
+	x FIXED;
+	y FIXED;
+	z FIXED;
+	a FLOAT;
+	b FLOAT;
+	c FLOAT;
+	mic FIXED;
+	rj3 FIXED;
+	
+{
+    x = 5;
+    y = 10;
+     c = 5-(x+3)*2;
+	
+    mic = 0;
+    rj3 = mic*2+4;
+    
+    IF (x >= y) THEN
+       	IF (x == 4+1) THEN
+            WRITE (100);
+        ELSE
+            WRITE (200.5);
+        FI
+        
+        IF ( 0.7 + y - 1 < -300) THEN
+            WRITE (300);
+            x = 10;
+        ELSE
+            x = 750;
+            WRITE (x+1);
+        FI
+    FI
+    
+    a = 10.3;
+    b = 2.0;
+    z = -8;
+    
+    WHILE ((a/(b-2)) >= 0) { 
+        WHILE ( (x==0) & (y == z) ) { 
+            IF(a < (100+2)) THEN
+                IF((b+z) > 3) THEN
+                    WRITE(a);
+                ELSE
+                    IF((1-x-1) > (100-200)) THEN
+                        WRITE(b);
+                    ELSE
+                        WRITE(c);
+                    FI
+                FI
+            FI
+            y = y-1;
+        }
+        c = a-b;
+        a = c;
+    }
+
+    x = 1;
+    y = 5;
+    z = 10;
+    
+    WHILE (x == 1) {
+        WRITE(-20);
+        WHILE (y > z) {
+            WHILE (x > 0) {
+                x = x-1;
+            }
+            WHILE (y >= 6) {
+                WRITE(789);
+            }
+            z = 3;
+            WHILE (z > 1-1) {
+                z = 1+z-2;
+            }
+        }
+    }
+
+	x = 5;
+    y = 0;
+    z = 3;
+    mic = 3;
+    
+    CASE x OF
+    {
+        1:WRITE(9);
+        2:WRITE(99);
+        3:WRITE(999);
+        4:WHILE(y <= 10){
+            y = y+3-2;
+         }
+        5:CASE z OF
+        {
+            1:CASE y OF
+            {
+                1:WHILE (x){
+                    x = 0;
+                  }
+                2:CASE 2 OF
+                {
+                    1:z=1;
+                    2:z=2;
+                    3:z=3;
+                }
+                3:CASE z-1 OF
+                {
+                    1:a=2.5;
+                }
+            }
+            2:CASE mic OF
+            {
+                1:WRITE(x+y-1);
+                2:WRITE(a/b-2.2+2.0);
+                3:WRITE(3.0);
+            }
+        }
+        6:WRITE(-123);
+        7:IF(rj3) THEN
+            WRITE(a);
+          ELSE
+            rj3 = 66;
+          FI
+    }
+
+    WRITE(8);
+}
